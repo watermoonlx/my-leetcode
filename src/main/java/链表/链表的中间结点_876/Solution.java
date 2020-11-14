@@ -5,16 +5,13 @@ package 链表.链表的中间结点_876;
 
 public class Solution {
     public ListNode middleNode(ListNode head) {
-        ListNode node = head;
-        ListNode middleNode = head;
-        while (node.next != null && node.next.next != null) {
-            node = node.next.next;
-            middleNode = middleNode.next;
+        ListNode cursor1Step = head;
+        ListNode cursor2Step = head;
+        while (cursor2Step != null && cursor2Step.next != null) {
+            cursor1Step = cursor1Step.next;
+            cursor2Step = cursor2Step.next.next;
         }
-        if (node.next != null) {
-            middleNode = middleNode.next;
-        }
-        return middleNode;
+        return cursor1Step;
     }
 }
 
