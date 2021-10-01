@@ -3,8 +3,6 @@
  */
 package 链表.删除排序链表中的重复元素_83;
 
-import java.util.HashSet;
-
 public class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         // 注意，这里的链表是已排序的。
@@ -26,11 +24,3 @@ public class Solution {
     }
 }
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}

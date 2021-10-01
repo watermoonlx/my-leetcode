@@ -16,6 +16,9 @@ public class Solution {
      * 我们可以忽略数组 nums1，先对将 nums2 中的每一个元素，求出其下一个更大的元素。
      * 随后对于将这些答案放入哈希映射（HashMap）中，再遍历数组 nums1，并直接找出答案。
      * 对于 nums2，我们可以使用单调栈来解决这个问题。
+     *
+     * 对于这种"需要看更多数据，才能解决目前问题，所以需要暂存当前数据"的问题，都应该考虑用栈来存储
+     * 当前状态。
      */
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
         HashMap<Integer, Integer> nextBiggerNumMap = new HashMap<>();

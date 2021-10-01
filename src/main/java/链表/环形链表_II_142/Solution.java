@@ -1,6 +1,6 @@
-package 链表;
+package 链表.环形链表_II_142;
 
-public class 环形链表_II_142 {
+public class Solution {
     public ListNode detectCycle(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;
