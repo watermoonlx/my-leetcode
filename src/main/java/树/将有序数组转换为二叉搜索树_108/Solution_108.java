@@ -3,6 +3,8 @@
  */
 package 树.将有序数组转换为二叉搜索树_108;
 
+import 树.TreeNode;
+
 public class Solution_108 {
     public TreeNode sortedArrayToBST(int[] nums) {
         if (nums.length == 0) {
@@ -25,15 +27,5 @@ public class Solution_108 {
             root.right = this.sortedArrayToBSTRec(nums, midIndex + 1, right);
         }
         return root;
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
     }
 }
